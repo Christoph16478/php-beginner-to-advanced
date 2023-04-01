@@ -1,0 +1,17 @@
+https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test
+
+https://www.browserstack.com/docs/automate/selenium/getting-started/python#run-your-first-test
+
+https://support.smartbear.com/crossbrowsertesting/docs/automated-testing/frameworks/selenium/python.html
+
+https://realpython.com/modern-web-automation-with-python-and-selenium/
+
+https://www.lambdatest.com/blog/selenium-webdriver-with-python/
+
+https://www.lambdatest.com/blog/selenium-webdriver-with-python/
+
+https://codeburst.io/python-selenium-tutorial-2021-57162fa620ac
+
+https://www.lambdatest.com/blog/automated-browser-testing-with-opera-and-selenium-in-python/
+
+https://wiki.saucelabs.com/display/DOCS/Getting+Started+with+Selenium+for+Automated+Website+Testing

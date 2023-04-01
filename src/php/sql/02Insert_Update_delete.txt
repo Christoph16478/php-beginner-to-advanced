@@ -1,0 +1,23 @@
+INSERT INTO user 
+(userName,userEmail,userRole)
+VALUES
+('Dora','dd@dd.dd',1)
+
+INSERT INTO user 
+(userName,userEmail,userRole)
+VALUES
+('Sinnlos','xxxx',9)
+
+DELETE FROM user 
+WHERE userID=5
+
+UPDATE user 
+SET userRole=2 
+WHERE userID=2
+
+UPDATE user SET
+userRole=2,
+userPassword='aaa' 
+WHERE userID=1
+
+

@@ -1,0 +1,8 @@
+CREATE TABLE lieferanten (
+liefer_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+firma VARCHAR( 50 ) NOT NULL ,
+strasse VARCHAR( 50 ) NULL ,
+plz VARCHAR( 5 ) NULL ,
+ort VARCHAR( 50 ) NULL
+) ENGINE = InnoDB ;
+

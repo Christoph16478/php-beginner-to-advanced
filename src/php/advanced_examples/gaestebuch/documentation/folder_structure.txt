@@ -1,0 +1,26 @@
+Angebote eines Reisebueros
+--------------------------
+
+Project structure:
+* reisebuero/ - root folder
+  * docs/ - Project documentation files
+    * VORUEBERLEGUNGEN.txt - Considerations regarding the project
+  * resources/
+    * css/
+      * blink.css - Contains blinking funtionality for the button to get to the offers
+    * db/
+      * reisen.sql - Secure copy of the used table. The database was called 'reisebuero'
+    * images/ - images used for the site
+  * src/
+    * classes/
+      * Database.php - Functions for database operations
+    * include/
+      * include_bootstrap.php - bootstrap wird hier inkludiert
+      * include_footer.php - Footer for website
+      * include_header.php - Header for website
+    * index.php - Entry point for website
+    * voyages.php - Presentation of database content
+    * index.php - entry point of program.
+  * GHANGELOG.md - Shows previous versions and latest release
+  * LICENSE.txt - Shows project license
+  * README.txt - Provides overview of project structure

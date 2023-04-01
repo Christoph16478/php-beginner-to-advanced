@@ -1,0 +1,12 @@
+
+
+
+<script>alert('Achtung Virus!!!')</script>
+
+<script>window.location.href="http://www.orf.at"</script>
+
+<style type="text/css">body { background:#000;); }</style>
+
+
+
+

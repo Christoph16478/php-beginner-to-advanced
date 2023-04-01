@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Formatierung anpassen</title>
+  <script src="jquery.min.js"></script>
+  <script>
+  $(function() {
+      $('h1').css( {
+          'background-color' : '#aaa',
+          'color' : 'white',
+          'border' : '20px dashed black',
+      });
+      $('li:even').css('font-style','italic');
+  });
+  </script>
+</head>
+<body >
+<h1>Eine Überschrift</h1>
+<h2>Eine weitere Überschrift</h2>
+<ul>
+  <li>Fenchel</li>
+  <li>Minigurke</li>
+  <li>Salat</li>
+</ul>
+</body>
+</html>

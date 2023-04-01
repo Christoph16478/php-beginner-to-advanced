@@ -1,0 +1,68 @@
+<?php
+
+session_start();
+session_regenerate_id(true);
+require_once("include_db.php");
+include_once("connect_to_db.inc");
+include_once("functions.inc");
+include_once("fields_product_page.inc");
+require_once("Database.php");
+include_once("connect_to_db.inc");
+include_once("vars.inc");
+require_once("Item.php");
+require_once("Catalog.php");
+require_once("ShoppingCart.php");
+require_once("WebForm.php");
+require_once("WebPage.php");
+require_once("Order.php");
+require_once("Database.php");
+require_once("Item.php");
+require_once("Catalog.php");
+require_once("ShoppingCart.php");
+require_once("WebForm.php");
+require_once("WebPage.php");
+require_once("Order.php");
+require_once("Database.php");
+include_once("functions.inc");
+
+if(isset($_POST["senden"]))
+{
+	$sql="SELECT * FROM benutzer 
+	WHERE userEmail=:email";
+	$abfrage=$db->prepare($sql);
+	$abfrage->bindParam(":email",$_POST["email"]);
+	$abfrage->execute();
+	$row=$abfrage->fetch();
+	//Wenn user gefunden wurde, dann wird Password abgeglichen
+	if($row !== false)
+	{
+		if($row["userPassword"])
+		{
+			//User erkannt
+			$_SESSION["userID"]=$row["userID"];
+			$_SESSION["userName"]=$row["userName"];
+			$_SESSION["userRole"]=$row["userRole"];
+			//Weiterleitung
+			//$location = "http://localhost/fernschule/baumarkt/src/Orders-oo.php";
+			header("location: Orders-oo.php"); //http://localhost/fernschule/baumarkt/src/
+		}//PW ENDE			
+	}//Prüfung user ENDE
+}//senden Ende
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>baumarkt</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<div id="wrapper">
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);  ?>">
+email:<input type="email" name="email"><br>
+password:<input type="password" name="password"><br>
+<input type="submit" name="senden">
+</form>
+</div>
+</body>
+</html>

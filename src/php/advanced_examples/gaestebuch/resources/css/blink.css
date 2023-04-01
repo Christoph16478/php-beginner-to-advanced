@@ -1,0 +1,9 @@
+/*
+Generates blinking on button element
+in include_header.php file. Source is
+the site https://www.html-seminar.de/css-blinkender-text.htm
+*/
+textarea {
+    width: 700px;
+    height: 100px;
+  }

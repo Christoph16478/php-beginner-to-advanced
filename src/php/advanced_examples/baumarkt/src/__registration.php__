@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Schulung</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<main>
+<?php
+
+require_once("Database.php");
+include_once("connect_to_db.inc");
+include_once("vars.inc");
+
+$user_name="";
+$password="";
+$zustimmung="";
+
+$ok=true;
+$bericht="";
+
+
+if(isset($_POST["senden"]))
+{
+    $connect = connect_to_db("vars.inc");
+	$sql = "SELECT * FROM benutzer";
+    $user_name=strip_tags($_POST["user_name"]);
+    $password=$_POST["password"];
+    
+    if(isset($_POST["zustimmung"]))
+    {
+        $zustimmung=$_POST["zustimmung"];
+    }
+    else
+    {
+        $ok=false;
+        $bericht.="Sie müssen den AGB zustimmen!<br>";
+    }
+    if($ok===true)
+    {
+        $bericht="GRATULATION! Alles bestens!<br><a href='index.php'>zum Login</a>";
+        $user_name="";
+        $password="";
+    }
+}
+echo $bericht;
+?>
+    <h3>Bitte registrieren</h3>
+	<form action="<?php  echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+	Ih Nutzername:<br>
+	<input type="text" name="user_name" value="<?php echo $user_name;?>"><br>
+	Passwort:<br>
+	<input type="password" name="password" value="<?php echo $password;?>"><br>
+	<br>
+
+	<input type="checkbox" name="zustimmung" value="ok" <?php if($zustimmung=="ok") { echo "checked"; } ?>>ich stimme zu<br>
+
+	<br>
+	<input type="submit" name="absenden" value="absenden"><br>
+
+	</form>
+	</main>
+</body>
+</html>

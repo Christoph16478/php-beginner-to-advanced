@@ -1,0 +1,40 @@
+Der Code steht unter der Lizenz des unten genannten Buches:
+
+PHP 7 und MySQL
+Ihr praktischer Einstieg in die Programmierung dynamischer Websites
+Florence Maurice
+Buch (Gebundene Ausgabe)
+
+Details
+Einband
+Gebundene Ausgabe
+
+Erscheinungsdatum
+18.12.2018
+
+Verlag
+Dpunkt
+
+Beschreibung
+Mit diesem Buch meistern Sie ohne große Vorkenntnisse den Einstieg in die Programmierung dynamischer Webseiten mit PHP und MySQL.
+Florence Maurice vermittelt Ihnen alles, was Sie benötigen, um Ihre erste eigene dynamische Website zu erstellen – inklusive eines Crashkurses in HTML und CSS. Leicht nachvollziehbar zeigt sie, wie Sie
+
+- eine Entwicklungsumgebung für PHP einrichten
+- Schleifen definieren, Bedingungen formulieren und Funktionen verwenden
+- Formulardaten mit PHP verarbeiten
+- mit Cookies und Sessions Besucher wiedererkennen
+- MySQL/MariaDB-Datenbanken einsetzen
+- mit PHP Datenabfragen durchführen.
+
+Auch fortgeschrittene Themen kommen nicht zu kurz. Sie lernen u.a., wie Sie
+- in die objektorientierte Programmierung einsteigen
+- PDO für den Datenbankzugriff nutzen
+- Grafiken und PDF-Dokumente mit PHP erzeugen
+- ein PHP-Framework (Laravel) benutzen
+- auf Ajax-Anfragen reagieren.
+
+Besonders berücksichtigt wird das oft vernachlässigte Thema Sicherheit!
+
+Anhand von kleinen praktischen Beispielen können Sie alle Techniken nachvollziehen. In zahlreichen Übungen verfestigen Sie das Gelernte und wenden es praktisch an.
+
+Nach der Lektüre sind Sie in der Lage, mit PHP und MySQL eigene serverseitige datenbankgestützte Anwendungen zu erstellen.

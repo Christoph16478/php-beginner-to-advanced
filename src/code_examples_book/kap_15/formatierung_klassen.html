@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Formatierung anpassen</title>
+  <style>
+    .ueb {
+      background-color: #aaa;
+      color: white;
+      border: 20px dashed black;
+    }
+    .bet {
+      font-style: italic;
+    }
+
+  </style>
+  <script src="jquery.min.js"></script>
+  <script>
+      $(function () {
+          $('h1').addClass('ueb');
+          $('li:even').addClass('bet');
+      });
+  </script>
+</head>
+<body>
+<h1>Eine Überschrift</h1>
+<h2>Eine weitere Überschrift</h2>
+<ul>
+  <li>Fenchel</li>
+  <li>Minigurke</li>
+  <li>Salat</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,63 @@
+SELECT Land, Einwohner FROM laender
+
+//Aliasnamen
+SELECT Land, Einwohner as BewohnerInnen FROM laender
+
+//Berechnet Bev.Dichte
+SELECT Land, Einwohner/Flaeche as Dichte FROM laender
+
+SELECT Land, BIP/Einwohner as Produkt, Flaeche FROM Laender
+
+
+//Filtern mit WHERE
+SELECT * FROM laender 
+WHERE Region='Nordafrika'
+
+SELECT Land, Flaeche FROM laender
+WHERE Flaeche <=100000
+
+//Mehrere Regionen
+SELECT * FROM laender 
+WHERE Region='Nordafrika' OR Region='Mittelamerika'
+
+//Mehrere Regionen
+SELECT * FROM laender 
+WHERE Region IN('Nordafrika','Mittelamerika','Westasien')
+
+SELECT * FROM laender 
+WHERE LandID IN(3,7,14,67)
+
+//Zwischen min und Max
+SELECT * FROM laender 
+WHERE BIP BETWEEN 1000 AND 2000
+
+//Außerhalb min und Max
+SELECT * FROM laender 
+WHERE BIP NOT BETWEEN 1000 AND 2000
+
+//Alle mit C beginnend
+SELECT * FROM laender
+WHERE Land LIKE 'C%'
+
+//Alle mit a endend
+SELECT * FROM laender
+WHERE Land LIKE '%a'
+
+//Alle mit na im Wort
+SELECT * FROM laender
+WHERE Land LIKE '%na%'
+
+//Alle mit 2. Buchstabe  h
+SELECT * FROM laender WHERE Land LIKE '_h%';
+
+
+//Sortierung mit Order By
+SELECT Land,Flaeche FROM laender
+ORDER BY Flaeche ASC
+
+SELECT Land,Flaeche FROM laender
+ORDER BY Flaeche DESC
+
+
+
+

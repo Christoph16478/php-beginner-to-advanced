@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>jQuery</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    label {
+      display: block;
+    }
+    .textfeld input {
+      padding: 5px 10px;
+    }
+    input[type="submit"] {
+      margin-top: 20px;
+    }
+    .container {
+      background-color: #efefef;
+      border: 1px solid #aaa;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <form id="meinformular" action="senden.php" method="post">
+    <div class="textfeld">
+      <label for="Vorname">Vorname</label>
+      <input type="text" id="Vorname" name="Vorname">
+    </div>
+    <div class="textfeld">
+      <label for="Nachname">Nachname</label>
+      <input type="text" id="Nachname" name="Nachname">
+    </div>
+    <div>
+      <input type="submit" value="Absenden">
+    </div>
+  </form>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+  var $form = $('#meinformular');
+  $form.on('submit', function (e) {
+    e.preventDefault();
+    var url = $form.attr('action');
+    $.post(
+      url,
+      $form.serialize(),
+      function (daten) {
+        $('.container').html('Vielen Dank: ' + daten);
+      }
+    )
+  });
+</script>
+</body>
+</html>
